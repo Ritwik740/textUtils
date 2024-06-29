@@ -78,7 +78,7 @@ export default function TextForm(props) {
       <div className="container">
         <h2 className="text-center">Text Summary:</h2>
         <p className="text-center">
-          Words : {text.split(" ").filter(word => word).length} <br />
+          Words : {text.split(/\s+/).filter(word => word).length} <br />
           Characters : {text.length}
         </p>
       </div>
